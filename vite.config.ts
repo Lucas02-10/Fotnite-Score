@@ -8,7 +8,7 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
+// https://vite.dev
 export default defineConfig({
   plugins: [react(), tailwindcss(), viteSingleFile()],
   resolve: {
@@ -16,4 +16,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  server: {
+    allowedHosts: ["fotnite-score-production.up.railway.app"]
+  },
+  preview: {
+    allowedHosts: ["fotnite-score-production.up.railway.app"]
+  }
 });
