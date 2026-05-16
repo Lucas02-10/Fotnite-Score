@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-fortnite-bg: #0f0f0f;
+  --color-fortnite-card: #1a1a1a;
+  --color-fortnite-green: #00df82;
+  --color-fortnite-blue: #3b82f6;
+}
+
+body {
+  background-color: var(--color-fortnite-bg);
+  color: white;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.fortnite-card-gradient {
+  background: linear-gradient(145deg, #1e1e1e, #161616);
+}
+
+.fortnite-btn-green {
+  background-color: #00df82;
+  color: #000;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.fortnite-btn-green:hover {
+  background-color: #00c874;
+  transform: translateY(-1px);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.text-golden-yellow {
+  color: #ffff00 !important;
+  text-shadow: 0 0 12px rgba(255, 255, 0, 0.5) !important;
+  font-weight: 800 !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeIn 0.4s ease-out forwards;
+}
