@@ -17,9 +17,9 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ["fotnite-score-production.up.railway.app"]
+    allowedHosts: true
   },
   preview: {
-    allowedHosts: ["fotnite-score-production.up.railway.app"]
+    allowedHosts: true
   }
 });
